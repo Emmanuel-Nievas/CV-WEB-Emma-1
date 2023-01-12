@@ -7,15 +7,19 @@
 }
 
 body {
-    background-color: aliceblue;
+    background-color: darkgray;
     color: black;
     margin: 0%;
+}
+
+a {
+    color: orange;
 }
 
 .col {
     color: black;
     border: solid 5px black;
-    background-color: yellow;
+    background-color: rgb(96, 77, 77);
 }
 
 .container-fluid {
@@ -66,7 +70,7 @@ body {
     opacity: 0.9;
 }
 
-h2 {
+.h22 {
     text-align: center;
 }
 
@@ -75,4 +79,5 @@ h2 {
     border: solid black 1px;
     margin: 100px;
     background-color: azure;
+    display: none;
 }
