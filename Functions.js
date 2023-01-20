@@ -16,34 +16,32 @@ document.getElementById('botonaccion').addEventListener('click', function() {
 });
 
 
-
-
-
-
-
-function mostrar() {
-    
-    document.getElementById("infot").style.display = 'block';
-    
-}
-
 */
 
 
+let boo = false;
 
-let mostrar = false;
-
-document.getElementById("btn").addEventListener('click', cambio);
-
-
-function cambio() {
-
-    if (mostrar == false) {
-
-        document.getElementById("infot").style.display = 'block';
-        mostrar = true
+function botonInfo(a) {
+    if (boo == false) {
+        document.getElementById(a).style.display = "block";
+        boo = true;
     } else {
-        document.getElementById("infot").style.display = 'none';
-        mostrar = flase
-    };
+        document.getElementById(a).style.display = "none";
+        boo = false;
+    }
 };
+
+//---------------------------
+
+
+document.getElementById('btn').addEventListener('click', function() {
+    botonInfo('infot');
+});
+
+document.getElementById('bt').addEventListener('click', function() {
+    botonInfo('infot2');
+});
+
+document.getElementById('b').addEventListener('click', function() {
+    botonInfo('infot3');
+});
