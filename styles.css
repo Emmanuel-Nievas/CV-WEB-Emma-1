@@ -1,13 +1,4 @@
-.form {
-    text-align: center;
-}
-
-.labF {
-    margin: 5px;
-}
-
 body {
-    /**  background-color: darkgray;*/
     background-image: url(/assest/imagenes/fondo3.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,10 +7,16 @@ body {
     color: black;
     margin: 0%;
     font-family: Righteous;
+    min-height: 100vh;
+    width: 100%;
+    /*
+    border: solid red 5px;
+    */
 }
 
 a {
     color: orange;
+    text-decoration: none;
 }
 
 .col {
@@ -92,21 +89,44 @@ a {
 
 .info {
     text-align: center;
-    border: solid black 1px;
     margin: 5%;
+    /*
+    border: solid black 1px;
     background-color: azure;
     display: none;
-    padding: 5px;
+    */
+    padding: 2px;
+    color: black;
+    text-shadow: 0 10px 30px #000;
+}
+
+.boder-difum {
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background-color: rgb(243, 243, 243, 0.0);
+    padding: 1px;
+    border-radius: 100px;
+    display: none;
 }
 
 .sect-1 {
     margin-left: 35px;
     margin-right: 35px;
+    height: calc(100vh - 100%);
+}
+
+#btn,
+#bt,
+#b {
+    background-color: green;
 }
 
 footer {
-    background-color: black;
-    color: red;
-    margin: 0%;
+    border-top: solid black 3px;
+    background-color: rgb(96, 77, 77);
+    color: orange;
     text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 1%;
 }

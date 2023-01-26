@@ -1,47 +1,49 @@
-/**
- 
-function sumar(a, b) {
-    return a + b;
-};
+let b = false;
+
+function botonInfo(a, c) {
 
 
-document.getElementById('botonaccion').addEventListener('click', function() {
-    
-    let numor1 = document.getElementById('num1').value;
-    let numor2 = document.getElementById('num2').value;
-    
-    let resultx = sumar(parseInt(numor1), parseInt(numor2));
-    console.log('El result es : ' + resultx);
-    document.getElementById('result').innerHTML = resultx;
-});
-
-
-*/
-
-
-let boo = false;
-
-function botonInfo(a) {
-    if (boo == false) {
+    if (b == false) {
         document.getElementById(a).style.display = "block";
-        boo = true;
+        document.getElementById(c).style.background = "red";
+        document.getElementById(c).innerHTML = "ocultar";
+        console.log('si');
+        b = true;
     } else {
         document.getElementById(a).style.display = "none";
-        boo = false;
-    }
+        document.getElementById(c).style.background = "green";
+        document.getElementById(c).innerHTML = "mostrar";
+        b = false;
+        console.log('no');
+    };
 };
 
-//---------------------------
 
+//vinculacion de botones a funcion
 
 document.getElementById('btn').addEventListener('click', function() {
-    botonInfo('infot');
+    botonInfo('infot', 'btn');
 });
 
 document.getElementById('bt').addEventListener('click', function() {
-    botonInfo('infot2');
+    botonInfo('infot2', 'bt');
 });
 
 document.getElementById('b').addEventListener('click', function() {
-    botonInfo('infot3');
+    botonInfo('infot3', 'b');
 });
+
+
+
+
+//barra superior
+function moOver(obj) {
+    obj.style = 'background-color: gray';
+};
+
+function moOverOut(obj) {
+    obj.style = 'background-color: rgb(96, 77, 77)';
+
+};
+
+//efecto botones
