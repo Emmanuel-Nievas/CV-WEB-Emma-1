@@ -1,20 +1,16 @@
-let b = false;
-
 function botonInfo(a, c) {
 
+    let texto = document.getElementById(a)
 
-    if (b == false) {
+
+    if (texto.classList.toggle('none')) {
         document.getElementById(a).style.display = "block";
         document.getElementById(c).style.background = "red";
         document.getElementById(c).innerHTML = "ocultar";
-        console.log('si');
-        b = true;
     } else {
         document.getElementById(a).style.display = "none";
         document.getElementById(c).style.background = "green";
         document.getElementById(c).innerHTML = "mostrar";
-        b = false;
-        console.log('no');
     };
 };
 
@@ -32,6 +28,7 @@ document.getElementById('bt').addEventListener('click', function() {
 document.getElementById('b').addEventListener('click', function() {
     botonInfo('infot3', 'b');
 });
+
 
 
 
