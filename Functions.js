@@ -45,5 +45,3 @@ function moOverOut(obj) {
     obj.style = 'background-color: rgb(96, 77, 77)';
 
 };
-
-//efecto botones

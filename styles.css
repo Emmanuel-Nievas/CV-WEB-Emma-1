@@ -87,15 +87,16 @@ a {
     margin: 50px;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+}
+
 .info {
     text-align: center;
     margin: 5%;
-    /*
-    border: solid black 1px;
-    background-color: azure;
-    display: none;
-    */
-    padding: 2px;
+    padding: 10px;
     color: black;
     text-shadow: 0 10px 30px #000;
 }
@@ -110,8 +111,9 @@ a {
 }
 
 .sect-1 {
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
     height: calc(100vh - 100%);
 }
 
